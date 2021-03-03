@@ -18,7 +18,12 @@
  <body <?php body_class(); ?> >
     <div class="wrapper">
     <header>
-
+        <img class="logo" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/logo-transparent.png" alt="RNS logo transparent">
+        <div class="header-icons">
+            <img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/search-solid.svg" alt="search icon">
+            <img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/shopping-cart-solid.svg" alt="shopping cart icon">
+            <div class="menu-icon"><img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/bars-solid.svg" alt="menu icon"></div>
+        </div>
         <nav>
             <?php //get_template_part('template-parts/sidebar', 'header'); ?>       
         </nav>
