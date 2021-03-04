@@ -76,4 +76,20 @@ function theme_setup() {
 }
 add_action('after_setup_theme', 'theme_setup');
 
+$stirbu_includes = array(
+    '/widgets.php', // Register widget area.
+ );
+ 
+ foreach ( $stirbu_includes as $file ) {
+    $filepath = locate_template( 'includes' . $file );
+    if ( ! $filepath ) {
+        trigger_error( sprintf( 'Error locating /includes%s for inclusion',
+        $file ), E_USER_ERROR );
+    }
+    require_once $filepath;
+ }
+
 ?>
+
+?>
+

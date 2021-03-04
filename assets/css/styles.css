@@ -1,0 +1,503 @@
+/* Box sizing rules */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /* Remove default padding */
+  ul[class], ol[class] {
+    padding: 0;
+  }
+  /* Remove default margin */
+  body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+  }
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  /* Remove list styles on ul, ol elements with a class attribute */
+  ul[class], ol[class] {
+    list-style: none;
+  }
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  /* Make images easier to work with */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  /* Natural flow and rhythm in articles by default */
+  article > * + * {
+    margin-top: 1em;
+  }
+  /* Inherit fonts for inputs and buttons */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* Remove all animations and transitions for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  html {
+    font-size: 62.5%;
+    /* base size 10px */
+  }
+  body {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-family: 'Oxygen', sans-serif;
+  }
+  header {
+    background-image: url(http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/mobile-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 60rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    position: relative;
+  }
+  header svg {
+    width: 4rem;
+    height: 3.2rem;
+    color: #fff;
+  }
+  img.logo {
+    width: 37%;
+    height: 50%;
+  }
+  /* svg menu icon */
+  svg#svg-replaced-2 {
+    height: 3.4rem;
+    margin-left: 1rem;
+  }
+  .menu-icon {
+    display: inline;
+  }
+  nav {
+    display: none;
+  }
+  
+  /* rehd's mobile css */
+  /* default */
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  
+  li{
+    list-style-type: none;
+    
+  }
+  /* footer css */
+  footer{
+    background-color: #231F20;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Adam", Arial, sans-serif;
+    letter-spacing: .25rem;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  footer a:hover{
+    color: #E5C778;
+  }
+  
+  .rehd-container{
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+  
+  footer > div:first-child > div:first-child{
+    display: flex;
+    justify-content: center;
+    padding: 1.81rem 0;
+    border-bottom: 1px solid white;
+  }
+  
+  footer > div > div:nth-child(2) > div:nth-child(1){
+    display: none;
+  }
+  
+  /* font family import */
+  @font-face{
+    font-family: 'Adam';
+    src: url('http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/Adam-Light.ttf');
+    font-weight: normal;
+  }
+  
+  @font-face{
+    font-family: 'Adam Medium';
+    src: url('http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/Adam-Medium.ttf');
+    font-weight: normal;
+  }
+  
+  @font-face{
+    font-family: 'Adam Bold';
+    src: url('http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/Adam-Bold.ttf');
+    font-weight: bold;
+  }
+  
+  @font-face{
+    font-family: 'Vacations in Paradise';
+    src: url('http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/Vacations-in-Paradise-Personal-Use.ttf');
+    font-weight: normal;
+  }
+  
+  @font-face{
+    font-family: 'Coolvetica Regular';
+    src: url('http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/coolvetica-rg.ttf');
+    font-weight: normal;
+  }
+  
+  
+  
+  footer h3{
+    color: #E5C778;
+    margin: 1rem 0;
+    font-size: 2.1rem;
+  }
+  
+  footer li{
+    margin: 1rem 0;
+    font-size: 1.6rem;
+  }
+  
+  footer > div > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer > div > div{
+    padding: 1rem 0;
+    border-bottom: 1px solid white;
+  }
+  
+  footer > div:nth-child(2) > div{
+    font-size: 1rem;
+    border-bottom: none;
+  }
+  
+  #media_image-3{
+    display: none;
+  }
+  
+  /* end of footer css */
+  
+  /* section for robert's about me homepage */
+  
+  .about-me-home, .about-me-home p{
+    font-family: 'Adam Medium', Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    color: #000000;
+    font-size: 1.4rem;
+  }
+  
+  .about-me-home{
+    padding: 3rem 0;
+  }
+  
+  .about-me-home h1{
+    text-transform: uppercase;
+    font-family: 'Adam Bold', Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem 0;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  .about-me-home p{
+    padding: 2rem 0;
+    padding-top: 0;
+  }
+  
+  .about-me-home img{
+    width: 100%;
+  }
+  
+  .about-me-home a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 1rem;
+    font-family: 'Adam Bold', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .about-me-home a:hover{
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+  }
+  
+  /* end of section for robert's about me homepage */
+  
+  
+  /* end of rehd's mobile css */
+  
+  
+  
+  /* end of mobile css */
+  
+  /* tablet css */
+  
+  @media only screen and (min-width: 767px){
+    /* rehd's tablet css */
+    /* footer */
+    .rehd-container{
+      max-width: 102.2em;
+    }
+  
+    footer > div > div:nth-child(2) > div:nth-child(1){
+      display: block;
+    }
+    /* end of footer */
+  
+    /* section for robert's about me homepage */
+  
+    .about-me-home > div{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .about-me-home img {
+      width: 100%;
+      margin: 0 3rem;
+      flex-basis: 40%;
+    }
+  
+    .about-me-info{
+      flex-basis: 35%;
+    }
+  
+    .about-me-home h1{
+      padding-top: 0;
+      padding-bottom: 3rem;
+    }
+  
+    .hidden{
+      display: block;
+    }
+  
+    .about-me-home h1, .about-me-home p, .about-me-home a{
+      color: white;
+    }
+  
+    .about-me-home a{
+      border: 1px solid white;
+    }
+  
+    .about-me-home p{
+      padding-bottom: 3rem;
+    }
+  
+    .about-me-home{
+      position: relative;
+      margin: 2rem 0;
+    }
+  
+    #background{
+      background: #B3B3B3;
+      width: 80%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 20%;
+      z-index: -1;
+    }
+  
+    /* end of section for robert's about me homepage */
+  
+    /* end of rehd's tablet css */
+  }
+  
+  /* adjustment for larger viewport tablet */
+  
+  @media only screen and (min-width: 921px){
+    .about-me-info{
+      flex-basis: 40%;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 991px){
+    .about-me-home img {
+      flex-basis: 45%;
+    }
+  
+    .about-me-info{
+      flex-basis: 48%;
+    }
+  
+    .about-me-home a{
+      font-size: 2.8rem;
+    }
+  
+    .about-me-home p{
+      font-size: 2.1rem;
+    }
+  
+    .about-me-home h1{
+      font-size: 5.5rem;
+    }
+  }
+  
+  /* end of tablet css */
+  
+  
+  /* desktop view */
+  @media only screen and (min-width: 1024px) {
+    header {
+      background-image: url(http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/banner.png);
+      display: block;
+    }
+    img.logo {
+      width: auto;
+      margin: 0 auto;
+    }
+    .header-icons {
+      position: absolute;
+      top: 2%;
+      right: 15%;
+    }
+  
+    /* rehd's desktop css */
+    /* footer */
+    .rehd-container{
+      max-width: 204.80rem;
+    }
+  
+    footer{
+      padding: 5rem 0;
+      padding-bottom: 0;
+    }
+  
+    footer > div:first-child{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    footer > div:first-child > div{
+      flex-basis: 45%;
+    }
+  
+    footer > div:first-child > div:last-child{
+      flex-basis: 50%;
+    }
+  
+    footer > div:first-child > div:first-child{
+      border-bottom: none;
+      border-right: 1px solid white;
+    }
+  
+    footer > div > div{
+      border-bottom: none;
+    }
+  
+    #media_image-2{
+      display: none;
+    }
+  
+    #media_image-3{
+      display: block;
+      padding: 3rem 7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    footer > div:first-child > div:nth-child(2){
+      width: 100%;
+      margin: 5rem 0;
+      justify-content: space-around;
+    }
+  
+    footer > div:last-child{
+      padding-top: 3rem;
+  
+    }
+  
+    footer > div:nth-child(2) > div {
+      font-size: 1rem;
+      border-bottom: none;
+      border-top: 1px solid white;
+      margin: 0 3rem;
+  }
+    /* end of footer */
+  
+    /* section for robert's about me homepage */
+  
+    .about-me-info{
+      margin: 8% 0;
+    }
+  
+    .about-me-home img{
+      height: 100%;
+      flex-basis: 31%;
+    }
+  
+    /* end of section for robert's about me homepage */
+  
+    /* end of rehd's desktop css */
+  
+    
+  }
+  /* adjustment size for bigger resolution */
+  
+  @media only screen and (min-width:1800px){
+    .about-me-home img {
+      flex-basis: 31%;
+    }
+  
+    .about-me-info {
+      flex-basis: 65%;
+    }
+  
+    .about-me-info{
+      margin: 15% 0;
+    }
+  }
+  
+  
+  @media only screen and (min-width:2048px){
+    .about-me-home img {
+      flex-basis: 45%;
+    }
+  
+    .about-me-info {
+      flex-basis: 48%;
+    }
+  
+    .about-me-info{
+      margin: 15% 0;
+    }
+  
+    #background{
+      left: 40%;
+    }
+  }
+  
+  
+  /* end of desktop view */
+  
