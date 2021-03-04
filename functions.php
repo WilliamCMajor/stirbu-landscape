@@ -76,4 +76,30 @@ function theme_setup() {
 }
 add_action('after_setup_theme', 'theme_setup');
 
+
+/** REGISTER MENUS */
+//this menu function will allow for multiple menus :)
+function register_menus() { 
+    register_nav_menus(
+        array(
+            'main-menu' => 'Main Menu', //primary menu
+        )
+    ); 
+}
+add_action( 'init', 'register_menus' );
+
+
+/********  multiple plugin area ********/
+$stirbu_includes = array (
+    '/widgets.php',
+);
+
+foreach ($stirbu_includes as $file) {
+    $filepath = locate_template( 'includes' . $file );
+    if( !$filepath ){
+        trigger_error(sprintf ('Error locating /includes%s for inclusion', $file), E_USER_ERROR);
+    }
+    require_once $filepath;
+}
+
 ?>

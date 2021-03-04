@@ -10,7 +10,12 @@
 
         </div><!-- closing tag for site-content -->
         <footer>
-        
+            <div class="rehd-container">
+                <?php get_template_part('template-parts/sidebar', 'footer'); ?>
+            </div>
+            <div class="rehd-container">
+                <?php get_template_part('template-parts/desktop', 'footer'); ?>
+            </div>
         </footer>
         <?php wp_footer(); ?>
     </body>
