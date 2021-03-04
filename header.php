@@ -25,7 +25,7 @@
             <div class="menu-icon"><img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/bars-solid.svg" alt="menu icon"></div>
         </div>
         <nav>
-            <?php //get_template_part('template-parts/sidebar', 'header'); ?>       
+            <?php get_template_part('template-parts/sidebar', 'header'); ?>       
         </nav>
 
     </header>
