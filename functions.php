@@ -76,25 +76,6 @@ function theme_setup() {
 }
 add_action('after_setup_theme', 'theme_setup');
 
-<<<<<<< HEAD
-$stirbu_includes = array(
-    '/widgets.php', // Register widget area.
- );
- 
- foreach ( $stirbu_includes as $file ) {
-    $filepath = locate_template( 'includes' . $file );
-    if ( ! $filepath ) {
-        trigger_error( sprintf( 'Error locating /includes%s for inclusion',
-        $file ), E_USER_ERROR );
-    }
-    require_once $filepath;
- }
-
-?>
-
-?>
-
-=======
 
 /** REGISTER MENUS */
 //this menu function will allow for multiple menus :)
@@ -122,4 +103,3 @@ foreach ($stirbu_includes as $file) {
 }
 
 ?>
->>>>>>> 34277dbbf33ad263b4d86789bd426768a09a05b4

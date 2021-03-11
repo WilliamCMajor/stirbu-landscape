@@ -1,0 +1,242 @@
+ /* tablet css */
+  
+ @media only screen and (min-width: 767px){
+    /* rehd's tablet css */
+    /* footer */
+    .rehd-container{
+      max-width: 102.2em;
+    }
+  
+    footer > div > div:nth-child(2) > div:nth-child(1){
+      display: block;
+    }
+    /* end of footer */
+  
+    /* section for robert's about me homepage */
+  
+    .about-me-home > div{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .about-me-home img {
+      width: 100%;
+      margin: 0 3rem;
+      flex-basis: 40%;
+    }
+  
+    .about-me-info{
+      flex-basis: 35%;
+    }
+  
+    .about-me-home h1{
+      padding-top: 0;
+      padding-bottom: 3rem;
+    }
+  
+    .hidden{
+      display: block;
+    }
+  
+    .about-me-home h1, .about-me-home p, .about-me-home a{
+      color: white;
+    }
+  
+    .about-me-home a{
+      border: 1px solid white;
+    }
+  
+    .about-me-home p{
+      padding-bottom: 3rem;
+    }
+  
+    .about-me-home{
+      position: relative;
+      margin: 2rem 0;
+    }
+  
+    #background{
+      background: #B3B3B3;
+      width: 80%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 20%;
+      z-index: -1;
+    }
+  
+    /* end of section for robert's about me homepage */
+  
+    /* end of rehd's tablet css */
+  }
+  
+  /* adjustment for larger viewport tablet */
+  
+  @media only screen and (min-width: 921px){
+    .about-me-info{
+      flex-basis: 40%;
+    }
+  }
+  
+  
+  @media only screen and (min-width: 991px){
+    .about-me-home img {
+      flex-basis: 45%;
+    }
+  
+    .about-me-info{
+      flex-basis: 48%;
+    }
+  
+    .about-me-home a{
+      font-size: 2.8rem;
+    }
+  
+    .about-me-home p{
+      font-size: 2.1rem;
+    }
+  
+    .about-me-home h1{
+      font-size: 5.5rem;
+    }
+  }
+  
+  /* end of tablet css */
+  
+  
+  /* desktop view */
+  @media only screen and (min-width: 1024px) {
+    header {
+      background-image: url(http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/banner.png);
+      display: block;
+    }
+    img.logo {
+      width: auto;
+      margin: 0 auto;
+    }
+    .header-icons {
+      position: absolute;
+      top: 2%;
+      right: 15%;
+    }
+  
+    /* rehd's desktop css */
+    /* footer */
+    .rehd-container{
+      max-width: 204.80rem;
+    }
+  
+    footer{
+      padding: 5rem 0;
+      padding-bottom: 0;
+    }
+  
+    footer > div:first-child{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    footer > div:first-child > div{
+      flex-basis: 45%;
+    }
+  
+    footer > div:first-child > div:last-child{
+      flex-basis: 50%;
+    }
+  
+    footer > div:first-child > div:first-child{
+      border-bottom: none;
+      border-right: 1px solid white;
+    }
+  
+    footer > div > div{
+      border-bottom: none;
+    }
+  
+    #media_image-2{
+      display: none;
+    }
+  
+    #media_image-3{
+      display: block;
+      padding: 3rem 7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    footer > div:first-child > div:nth-child(2){
+      width: 100%;
+      margin: 5rem 0;
+      justify-content: space-around;
+    }
+  
+    footer > div:last-child{
+      padding-top: 3rem;
+  
+    }
+  
+    footer > div:nth-child(2) > div {
+      font-size: 1rem;
+      border-bottom: none;
+      border-top: 1px solid white;
+      margin: 0 3rem;
+  }
+    /* end of footer */
+  
+    /* section for robert's about me homepage */
+  
+    .about-me-info{
+      margin: 8% 0;
+    }
+  
+    .about-me-home img{
+      height: 100%;
+      flex-basis: 31%;
+    }
+  
+    /* end of section for robert's about me homepage */
+  
+    /* end of rehd's desktop css */
+  
+    
+  }
+  /* adjustment size for bigger resolution */
+  
+  @media only screen and (min-width:1800px){
+    .about-me-home img {
+      flex-basis: 31%;
+    }
+  
+    .about-me-info {
+      flex-basis: 65%;
+    }
+  
+    .about-me-info{
+      margin: 15% 0;
+    }
+  }
+  
+  
+  @media only screen and (min-width:2048px){
+    .about-me-home img {
+      flex-basis: 45%;
+    }
+  
+    .about-me-info {
+      flex-basis: 48%;
+    }
+  
+    .about-me-info{
+      margin: 15% 0;
+    }
+  
+    #background{
+      left: 40%;
+    }
+  }
+  
+  
+  /* end of desktop view */
