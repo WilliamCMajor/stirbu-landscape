@@ -3,12 +3,10 @@
  *  widget template for creating widgets
  *  @link https://developer.wordpress.org/themes/functionality/widgets/ &
  *  @link https://premium.wpmudev.org/blog/create-custom-wordpress-widget/
- *  @package Stirbu Landscape
- *  @since 1.0
- * 
  */
 
 /** Create a widget function and extend the WP_Widget class. */
+//our widget function his called dc_widget (name your widget function relative to your theme or generically)
 
 class stirbu_widget extends WP_Widget {
 
@@ -75,7 +73,7 @@ class stirbu_widget extends WP_Widget {
         return $instance;
     }
 
-} // class stirbu_widget
+} // class Foo_Widget
 
 //register the widget
 add_action( 'widgets_init', 'stirbu_widget_areas' );
@@ -87,9 +85,21 @@ if ( ! function_exists( 'stirbu_widget_areas' ) ) {
 
         register_sidebar(
 			array(
-				'name'          => __( 'Header', 'stirbu landscape' ),
-				'id'            => 'header-col',
-				'description'   => __( 'header-col, widget area', 'stirbu landscape' ),
+				'name'          => __( 'Header Nav', 'stirbu' ),
+				'id'            => 'header-nav',
+				'description'   => __( 'header nav', 'stirbu' ),
+				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</aside>',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+        );
+
+        register_sidebar(
+			array(
+				'name'          => __( 'Footer Logo', 'stirbu' ),
+				'id'            => 'footer-one',
+				'description'   => __( 'footer logo', 'stirbu' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -99,21 +109,9 @@ if ( ! function_exists( 'stirbu_widget_areas' ) ) {
 
 		register_sidebar(
 			array(
-				'name'          => __( 'Footer one', 'stirbu landscape' ),
-				'id'            => 'footer-col-one',
-				'description'   => __( 'footer-col-one, widget area', 'stirbu landscape' ),
-				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-				'after_widget'  => '</aside>',
-				'before_title'  => '<h3 class="widget-title">',
-				'after_title'   => '</h3>',
-			)
-        );
-        
-        register_sidebar(
-			array(
-				'name'          => __( 'Footer two', 'stirbu landscape' ),
+				'name'          => __( 'Footer Gallery', 'stirbu' ),
 				'id'            => 'footer-col-two',
-				'description'   => __( 'footer column two, widget area', 'stirbu landscape' ),
+				'description'   => __( 'Footer Gallery widget area', 'stirbu' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -123,41 +121,50 @@ if ( ! function_exists( 'stirbu_widget_areas' ) ) {
         
         register_sidebar(
 			array(
-				'name'          => __( 'Footer three', 'stirbu landscape' ),
+				'name'          => __( 'Footer Help', 'stirbu' ),
 				'id'            => 'footer-col-three',
-				'description'   => __( 'footer column three, widget area', 'stirbu landscape' ),
+				'description'   => __( 'Help Footer widget area', 'stirbu' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
 				'after_title'   => '</h3>',
 			)
-        );
+		);
 
         register_sidebar(
 			array(
-				'name'          => __( 'Footer four', 'stirbu landscape' ),
+				'name'          => __( 'Footer Legal', 'stirbu' ),
 				'id'            => 'footer-col-four',
-				'description'   => __( 'footer column four, widget area', 'stirbu landscape' ),
+				'description'   => __( 'Legal Footer widget area', 'stirbu' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
 				'after_title'   => '</h3>',
 			)
-        );
-        
+		);
 
-        
-        //Right Sidebar | primary sidebar
         register_sidebar(
 			array(
-				'name'          => __( 'Right Sidebar', 'stirbu landscape' ),
-				'id'            => 'sidebar-primary',
-				'description'   => __( 'Right Sidebar, Primary widget area', 'stirbu landscape' ),
-				'before_widget' => '<aside id="%1$s" class="sidebar right-sidebar %2$s">',
+				'name'          => __( 'Footer Copyright', 'stirbu' ),
+				'id'            => 'footer-col-five',
+				'description'   => __( 'Copyright Footer widget area', 'stirbu' ),
+				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="widget-title">',
 				'after_title'   => '</h3>',
 			)
-        );
+		);
+
+        register_sidebar(
+			array(
+				'name'          => __( 'Footer Copyright For Desktop', 'stirbu' ),
+				'id'            => 'footer-col-six',
+				'description'   => __( 'Desktop Copyright Footer widget area', 'stirbu' ),
+				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</aside>',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
 	}
 } // endif function_exists( 'codefish_widgets_init' ).

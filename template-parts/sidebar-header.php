@@ -7,6 +7,6 @@
 */
 ?>
 
-<?php if (is_active_sidebar( 'header-col' )) : ?>
-    <?php dynamic_sidebar( 'header-col' ); ?>
+<?php if (is_active_sidebar( 'header-nav' )) : ?>
+    <?php dynamic_sidebar( 'header-nav' ); ?>
 <?php endif ?>

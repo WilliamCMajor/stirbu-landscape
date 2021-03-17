@@ -1,3 +1,57 @@
 .home-content {
     margin: 2.4rem 5%;
 }
+
+button.shop-now {
+    padding: 0.5rem 2rem;
+    background: #fff;
+    font-weight: bold;
+}
+
+.featured-container {
+    margin-bottom: 4.8rem;
+}
+
+.featured-container img {
+    margin-bottom: 2.4rem;
+    margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .featured-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 4rem;
+    }
+
+    .text-left {
+        grid-template-columns: 1fr 2fr;
+    }
+    
+    .text-left img {
+        grid-column: 2/-1;
+    }
+    
+    .text-left div {
+        grid-row: 1/2;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .featured-container div {
+        align-self: center;
+    }
+    
+    .featured-container h2 {
+        font-size: 5.4rem;
+        line-height: 7.2rem;
+        margin-bottom: 2.4rem
+    }
+    
+    button.shop-now {
+        padding: 1rem 5rem;
+        font-size: 3rem;
+    }
+
+    
+}
