@@ -3,6 +3,7 @@
     header {
         background-image: url(http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/banner-e1615976804389.png);
         display: block;
+        min-height: 75rem;
     }
 
     img.logo {
@@ -39,9 +40,13 @@
     nav ul li {
         border: none;
     }
-    
+
     li#menu-item-37 {
-        margin-left: 16rem;
+        margin-left: 7rem;
+    }
+    
+    nav ul.menu li {
+        padding: 1rem 3rem;
     }
     
     li#menu-item-41:hover li#menu-item-37 {
@@ -57,7 +62,7 @@
     }
     
     .sub-menu li {
-        padding-left: 3rem;
+        width: 31rem;
         border-bottom: 1px solid #000;
     }
     
@@ -66,7 +71,7 @@
 @media only screen and (min-width: 1715px){
 
     nav {
-        top: 22%;
+        top: 19%;
         padding: 0 10%;
     }
 
