@@ -12,12 +12,12 @@ function add_theme_scripts() {
     wp_enqueue_style( 'Montserrat', '"https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"', false);
     
     //styles
-    //wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', false, '1.0','all');
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', false, '1.0','all');
     wp_enqueue_style( 'styles', get_template_directory_uri() . '/assets/css/styles.css', false, '1.0','all');
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     //scripts
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array ( 'jquery' ), 1.1, true);
     wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array ( 'jquery' ), 1.1, true);
-    //wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.js', array ( 'jquery' ), 1.1, true);
 }
 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
