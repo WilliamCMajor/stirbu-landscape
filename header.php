@@ -21,10 +21,17 @@
         <a href="<?php echo get_home_url(); ?>"><img class="logo" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/logo-transparent.png" alt="RNS logo transparent"></a>
         <div class="header-icons">
             <a href="#"><img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/search-solid.svg" alt="search icon"></a>
-            <a href="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/shop-collections/">
+            <a href="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/cart/">
                 <img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/shopping-cart-solid.svg" alt="shopping cart icon">
             </a>
-            <div class="menu-icon"><img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/bars-solid.svg" alt="menu icon"></div>
+            <div class="menu-icon">
+                <img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/bars-solid.svg" alt="menu icon">
+                <div class="user-icon">
+                    <a href="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/login/">
+                        <img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/04/user-solid.svg" alt="user icon">
+                    </a>
+                </div>
+            </div>
         </div>
         <nav>
             <?php get_template_part('template-parts/sidebar', 'header'); ?>       

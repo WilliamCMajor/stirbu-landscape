@@ -1,0 +1,75 @@
+.woocommerce{
+    width: 100%;
+    margin: 0;
+}
+
+.post-125 a, .post-125 h2{
+    font-family: 'Adam Bold';
+    src: url('http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/Adam-Bold.ttf');
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content > .woocommerce{
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+#content .products{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#content .products > li{
+    margin: 0;
+    width: 100%;
+    margin-bottom: 4rem;
+    flex-basis: calc(100% - 2px);
+    float: none !important;
+    border: 2px solid #B3B3B3;
+    padding: .5rem;
+}
+
+.woocommerce ul.products::before{
+    display: unset;
+    content: none;
+}
+
+
+// tablet
+@media only screen and (min-width: 767px){
+    #content > .woocommerce {
+      max-width: 102.2em;
+    }
+
+    #content .products{
+        flex-direction: row;
+    }
+
+    #content .products > li{
+        flex-basis: 48%;
+    }
+}
+
+
+// pc
+@media only screen and (min-width: 1024px){
+    #content > .woocommerce {
+        max-width: 204.80rem;
+    }
+
+    #content .products > li{
+        flex-basis: 28%;
+        width: 50%;
+        float: none !important;
+    }
+}

@@ -1,0 +1,29 @@
+/* * input,
+* button {
+    font-size: 1.6rem !important;
+} */
+
+#wppb-submit {
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+    background: #F0E7A1;
+}
+
+.woocommerce {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .woocommerce {
+        width: 50%;
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .woocommerce {
+        width: 30%;
+    }
+}
+
