@@ -1,12 +1,10 @@
 header {
-    background-image: url(http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/mobile-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 60rem;
     display: flex;
     justify-content: space-between;
-    padding: 5%;
     margin-bottom: 4.8rem;
     position: relative;
 
@@ -18,10 +16,6 @@ header svg {
     color: #fff;
 }
 
-img.logo {
-    width: 100%;
-    height: auto;
-}
 
 /* svg menu icon */
 svg#svg-replaced-2 {
@@ -89,11 +83,13 @@ aside#custom_html-6 {
     top: 3%;
 }
 
-li#menu-item-41 .sub-menu {
+li#menu-item-41 .sub-menu,
+li#menu-item-38 .sub-menu {
     display: none;
 }
 
-li#menu-item-41:hover .sub-menu {
+li#menu-item-41:hover .sub-menu,
+li#menu-item-38:hover .sub-menu {
     display:block;
 }
 

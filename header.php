@@ -18,9 +18,10 @@
  <body <?php body_class(); ?> >
     <div class="wrapper">
     <header>
+        <div class="banner"><img src="<?php echo get_header_image() ?>" alt=""></div>
         <a href="<?php echo get_home_url(); ?>"><img class="logo" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/logo-transparent.png" alt="RNS logo transparent"></a>
         <div class="header-icons">
-            <a href="#"><img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/search-solid.svg" alt="search icon"></a>
+            <!-- <a href="#"><img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/search-solid.svg" alt="search icon"></a> -->
             <a href="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/cart/">
                 <img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/shopping-cart-solid.svg" alt="shopping cart icon">
             </a>
