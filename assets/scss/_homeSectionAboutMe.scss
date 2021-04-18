@@ -1,0 +1,51 @@
+/* section for robert's about me homepage */
+  
+.about-me-home, .about-me-home p{
+    font-family: 'Adam Medium', Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    color: #000000;
+    font-size: 1.4rem;
+  }
+  
+  .about-me-home{
+    padding: 3rem 0;
+  }
+  
+  .about-me-home h1{
+    text-transform: uppercase;
+    font-family: 'Adam Bold', Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1rem 0;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  .about-me-home p{
+    padding: 2rem 0;
+    padding-top: 0;
+  }
+  
+  .about-me-home img{
+    width: 100%;
+  }
+  
+  .about-me-home a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 1rem;
+    font-family: 'Adam Bold', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .about-me-home a:hover{
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+  }
+  
+  /* end of section for robert's about me homepage */

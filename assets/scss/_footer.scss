@@ -1,0 +1,77 @@
+ /* rehd's mobile css */
+  /* default */
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  
+  li{
+    list-style-type: none;
+    
+  }
+  /* footer css */
+  footer{
+    background-color: #231F20;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Adam", Arial, sans-serif;
+    letter-spacing: .25rem;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  footer a:hover{
+    color: #E5C778;
+  }
+  
+  .rehd-container{
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+  
+  footer > div:first-child > div:first-child{
+    display: flex;
+    justify-content: center;
+    padding: 1.81rem 0;
+    border-bottom: 1px solid white;
+  }
+  
+  footer > div > div:nth-child(2) > div:nth-child(1){
+    display: none;
+  }
+
+  footer h3{
+    color: #E5C778;
+    margin: 1rem 0;
+    font-size: 2.1rem;
+  }
+  
+  footer li{
+    margin: 1rem 0;
+    font-size: 1.6rem;
+  }
+  
+  footer > div > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  footer > div > div{
+    padding: 1rem 0;
+    border-bottom: 1px solid white;
+  }
+  
+  footer > div:nth-child(2) > div{
+    font-size: 1rem;
+    border-bottom: none;
+  }
+  
+  #media_image-3{
+    display: none;
+  }
+  
+  /* end of footer css */

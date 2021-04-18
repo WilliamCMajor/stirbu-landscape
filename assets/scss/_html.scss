@@ -1,0 +1,48 @@
+html {
+    font-size: 62.5%; /* base size 10px */
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.wrapper {
+    max-width: 1920px; /* max screen size */
+    margin: 0 auto;
+}
+
+/* Typography */
+h1 {
+    font-size: 3.906rem;
+    line-height: 7.2rem;
+    font-family: 'Adam Bold', Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 4.8rem;
+    font-family: 'Adam Bold', Arial, sans-serif;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+p {
+    font-size: 1.6rem; /* 16px */
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+/* default links style */
+a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E5C778;
+}

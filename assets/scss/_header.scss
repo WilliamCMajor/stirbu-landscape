@@ -1,0 +1,103 @@
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 60rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+    position: relative;
+
+}
+
+header svg {
+    width: 4rem;
+    height: 3.2rem;
+    color: #fff;
+}
+
+.header-icons {
+    margin-top: 7rem;
+}
+
+img.logo {
+    margin-top: 5rem;
+}
+
+
+/* svg menu icon */
+svg#svg-replaced-2 {
+    height: 3.4rem;
+}
+
+.menu-icon {
+    display: inline;
+}
+
+.user-icon {
+    display: inline-block;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    padding: 6rem 0;
+    text-transform: uppercase;
+}
+
+nav.show-nav {
+    display: block;
+}
+
+nav ul li {
+    border-bottom: 1px solid #000;
+    padding: 1rem 6rem;
+    font-weight: bold;
+}
+
+
+/* Mobile nav close icon X */
+.close-icon {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+.close-icon:after {
+    content: '';
+    height: 4rem;
+    border-left: 2px solid #000;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 28px;
+}
+
+.close-icon:before {
+    content: '';
+    height: 4rem;
+    border-left: 2px solid #000;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 28px;
+}
+
+aside#custom_html-6 {
+    position: absolute;
+    right: 4%;
+    top: 3%;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.menu-item:hover .sub-menu {
+    display:block;
+}
+
+img.menu-image {
+    width: 4rem;
+    height: 4rem;
+}
