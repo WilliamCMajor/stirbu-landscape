@@ -17,8 +17,7 @@
  </head>
  <body <?php body_class(); ?> >
     <div class="wrapper">
-    <header>
-        <div class="banner"><img src="<?php echo get_header_image() ?>" alt=""></div>
+    <header style="background-image: url(<?php echo get_header_image(); ?>);">
         <a href="<?php echo get_home_url(); ?>"><img class="logo" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/logo-transparent.png" alt="RNS logo transparent"></a>
         <div class="header-icons">
             <!-- <a href="#"><img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/search-solid.svg" alt="search icon"></a> -->
@@ -26,12 +25,12 @@
                 <img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/shopping-cart-solid.svg" alt="shopping cart icon">
             </a>
             <div class="menu-icon">
-                <img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/bars-solid.svg" alt="menu icon">
                 <div class="user-icon">
-                    <a href="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/login/">
+                    <a href="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/my-account/">
                         <img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/04/user-solid.svg" alt="user icon">
                     </a>
                 </div>
+                <img class="style-svg" src="http://stirbu.web.dmitcapstone.ca/stirbu_landscape/wp-content/uploads/2021/03/bars-solid.svg" alt="menu icon">
             </div>
         </div>
         <nav>

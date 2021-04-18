@@ -10,6 +10,7 @@ get_header();
 ?>
 
 <main id="main" class="site-main" role="main">
+    <?php echo do_shortcode ('[products limit="6" columns="2"]'); ?> 
 </main>
 
 

@@ -12,11 +12,11 @@ function add_theme_scripts() {
     wp_enqueue_style( 'Montserrat', '"https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"', false);
     
     //styles
-    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', false, '1.0','all');
+    //wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', false, '1.0','all');
     wp_enqueue_style( 'styles', get_template_directory_uri() . '/assets/css/styles.css', false, '1.0','all');
     wp_enqueue_style( 'style', get_stylesheet_uri() );
     //scripts
-    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array ( 'jquery' ), 1.1, true);
+    //wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array ( 'jquery' ), 1.1, true);
     wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/js/main.js', array ( 'jquery' ), 1.1, true);
 }
 
@@ -101,5 +101,17 @@ foreach ($stirbu_includes as $file) {
     }
     require_once $filepath;
 }
+
+/* Custome form success sent message */
+function jetpackcom_contact_confirmation() {
+    if ( is_page( '16' ) ) {
+        $conf = __( 'A special confirmation message for the form you added to page 16', 'plugin-textdomain' );
+    } else {
+        $conf = __( 'A generic confirmation message to display for all the other forms', 'plugin-textdomain' );
+    }
+    return $conf;
+}
+add_filter( 'grunion_contact_form_success_message', 'jetpackcom_contact_confirmation' );
+
 
 ?>

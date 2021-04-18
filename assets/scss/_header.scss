@@ -16,11 +16,18 @@ header svg {
     color: #fff;
 }
 
+.header-icons {
+    margin-top: 7rem;
+}
+
+img.logo {
+    margin-top: 5rem;
+}
+
 
 /* svg menu icon */
 svg#svg-replaced-2 {
     height: 3.4rem;
-    margin-left: 1rem;
 }
 
 .menu-icon {
@@ -28,7 +35,7 @@ svg#svg-replaced-2 {
 }
 
 .user-icon {
-    display: none;
+    display: inline-block;
 }
 
 nav {
@@ -37,7 +44,6 @@ nav {
     position: absolute;
     top: 0;
     background-color: #fff;
-    margin-left: -5%;
     padding: 6rem 0;
     text-transform: uppercase;
 }
@@ -83,13 +89,11 @@ aside#custom_html-6 {
     top: 3%;
 }
 
-li#menu-item-41 .sub-menu,
-li#menu-item-38 .sub-menu {
+.sub-menu {
     display: none;
 }
 
-li#menu-item-41:hover .sub-menu,
-li#menu-item-38:hover .sub-menu {
+.menu-item:hover .sub-menu {
     display:block;
 }
 

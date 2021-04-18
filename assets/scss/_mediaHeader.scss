@@ -1,34 +1,42 @@
+@media only screen and (min-width: 480px){
+    .header-icons {
+        margin-top: 7rem;
+        margin-right: 5rem;
+    }
+    
+    img.logo {
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+}
 
 @media only screen and (min-width: 1024px){
     header {
         display: block;
         min-height: 75rem;
     }
-    
-    nav {
-        padding: 0 10%;
-        margin: 0 auto;
-    }
 
     img.logo {
         width: auto;
         margin: 0 auto;
+        padding: 5% 0;
     }
 
     .header-icons {
         position: absolute;
         top: 2%;
         right: 15%;
+        margin: 0;
     }
-}
-
-@media only screen and (min-width: 1200px){
 
     nav {
         display: block;
         background: none;
         color: #fff;
         top: 6%;
+        top: 14%;
+        margin: 0 auto;
+        padding: 0;
     }
     
     aside#custom_html-6 {
@@ -50,7 +58,18 @@
         margin: 0 auto;
     }
        
+    img.logo {
+        padding: 5% 0;
+    }
     
+    li#menu-item-37 {
+        margin-left: -6rem;
+    }
+    
+    li#menu-item-35 {
+        margin-left: 24rem;
+    }
+
     nav ul.menu li {
         padding: 1rem 3rem;
     }
@@ -70,10 +89,6 @@
     .sub-menu li {
         width: 31rem;
         border-bottom: 1px solid #000;
-    }
-
-    .user-icon {
-        display: inline-block;
     }
 
     // menu icon 

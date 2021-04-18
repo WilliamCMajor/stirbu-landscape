@@ -1,0 +1,57 @@
+.post-16 {
+    padding: 0 5%;
+}
+
+button.pushbutton-wide {
+    background: none;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+button.pushbutton-wide:hover {
+    background: #f1e892;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+    .post-16 {
+        padding: 0;
+    }
+
+    form.contact-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    form.contact-form input {
+        width: 100% !important;
+    }
+    
+    form.contact-form div {
+        margin-right: 5rem;
+    }
+    
+    form.contact-form div:last-of-type {
+        grid-column: 1 / -1;
+    }
+    
+    form.contact-form p {
+        grid-column: 1 / -1;
+    }
+    
+    .post-16 h1 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    form.contact-form,
+    .post-16 h1 {
+        width: 46%;
+    }
+}
