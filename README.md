@@ -6,6 +6,7 @@ This is a small business site that selling photos or any photography inquiries f
 
 ### A WordPress site build
 site URL https://rnsprints.com/
+
 Hosted on IONOS
 
 ### Usage
